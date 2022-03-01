@@ -3,7 +3,8 @@ import styles from "./WeatherPage.module.css";
 
 const WeatherPage = (props) => {
    let state = props.getState()
-   console.log(state)
+
+   const startCoordinate = 53;
 
    const elements = state.map(item => {
       return <div div className={styles.blockWeatherContainer}>
@@ -12,8 +13,12 @@ const WeatherPage = (props) => {
          <div className={styles.iconContainer}>
             <img src={require(`./../../assets/images/${item.cloudImg}`)}></img>
          </div>
-         <div className={styles.emptyContainer1}><div className={styles.round}>0</div></div>
-         <div className={styles.emptyContainer2}><div className={styles.round}>0</div></div>
+         <div className={styles.emptyContainer1}><div style={{ top: `${startCoordinate + item.coorUp}px` }} className={styles.round}><svg xmlns="https://upload.wikimedia.org/wikipedia/commons/4/4e/Breezeicons-actions-22-draw-circle.svg">
+            <circle cx="5" cy="5" r="5" fill="white" />
+         </svg></div></div>
+         <div className={styles.emptyContainer2}><div style={{ top: `${startCoordinate + item.coorDown}px` }} className={styles.round}><svg xmlns="https://upload.wikimedia.org/wikipedia/commons/4/4e/Breezeicons-actions-22-draw-circle.svg">
+            <circle cx="5" cy="5" r="5" fill="white" />
+         </svg></div></div>
          <div className={styles.iconContainer}>
             <img src={require(`./../../assets/images/${item.moonImg}`)}></img>
          </div>
