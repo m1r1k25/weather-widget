@@ -1,0 +1,51 @@
+.weatherPageContainer {
+   color: rgb(255, 255, 255);
+   display: grid;
+   grid-template-areas: "b b b b b";
+   margin: 0 auto;
+   position: relative;
+}
+
+.blockWeatherContainer {
+   margin: 0 auto;
+}
+
+.blockWeatherContainerActive {
+   background-color: rgb(102, 66, 66);
+}
+
+.dayContainer {
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+.dateContainer {
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+.iconContainer {
+   margin-top: 10px;
+   display: flex;
+   justify-content: center;
+}
+
+.iconContainer img {
+   width: 40px;
+   height: 40px;
+}
+
+.emptyContainer {
+   height: 100px;
+   width: 100%;
+   background-color: rgb(235, 118, 118);
+}
+
+.windSpeedContainer {
+   margin-top: 20px;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 10px;
+}
