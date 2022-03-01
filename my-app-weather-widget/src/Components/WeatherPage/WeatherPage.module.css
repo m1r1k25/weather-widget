@@ -37,10 +37,16 @@
    height: 40px;
 }
 
-.emptyContainer {
-   height: 100px;
+.emptyContainer1 {
+   height: 200px;
    width: 100%;
-   background-color: rgb(235, 118, 118);
+   position: relative;
+}
+
+.emptyContainer2 {
+   height: 200px;
+   width: 100%;
+   position: relative;
 }
 
 .windSpeedContainer {
@@ -49,3 +55,37 @@
    justify-content: center;
    margin-bottom: 10px;
 }
+
+.windSpeedContainer img {
+   fill: white;
+}
+
+.graphic1 {
+   top: 100px;
+   height: 200px;
+   width: 100%;
+   position: absolute;
+   z-index: 5;
+}
+
+.graphic2 {
+   top: 300px;
+   height: 200px;
+   width: 100%;
+   position: absolute;
+}
+
+.svg {
+   width: 1200px;
+}
+
+.round {
+   position: absolute;
+   top: 50px;
+   left: 27px;
+   color: white;
+   z-index: 100;
+}
+
+
+
