@@ -27,7 +27,7 @@ const WeatherPage = (props) => {
          </div>
       </div>
    })
-   //<div className={styles.round}>asfsaf</div>
+
    return (
       <div className={styles.weatherPageContainer}>
          {elements}

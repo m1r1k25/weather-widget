@@ -8,6 +8,7 @@
 
 .blockWeatherContainer {
    margin: 0 auto;
+   grid-area: "b";
 }
 
 .blockWeatherContainerActive {
