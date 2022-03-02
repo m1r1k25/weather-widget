@@ -6,9 +6,7 @@ import store from './redux/store';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App getState={store.getState.bind(store)}/>
+    <App getState={store.getState.bind(store)} />
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
