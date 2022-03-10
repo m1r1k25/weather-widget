@@ -1,92 +1,89 @@
 .weatherPageContainer {
-   color: rgb(255, 255, 255);
-   display: grid;
-   grid-template-areas: "b b b b b";
-   margin: 0 auto;
-   position: relative;
+  color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-areas: 'b b b b b';
+  margin: 0 auto;
+  position: relative;
 }
 
 .blockWeatherContainer {
-   margin: 0 auto;
-   grid-area: "b";
+  margin: 0 auto;
+  grid-area: 'b';
 }
 
 .blockWeatherContainerActive {
-   background-color: rgb(102, 66, 66);
+  background-color: rgb(102, 66, 66);
 }
 
 .dayContainer {
-   margin-top: 10px;
-   display: flex;
-   justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .dateContainer {
-   margin-top: 10px;
-   display: flex;
-   justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .iconContainer {
-   margin-top: 10px;
-   display: flex;
-   justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .iconContainer img {
-   width: 40px;
-   height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 .emptyContainer1 {
-   height: 200px;
-   width: 100%;
-   position: relative;
+  height: 200px;
+  width: 100%;
+  position: relative;
 }
 
 .emptyContainer2 {
-   height: 200px;
-   width: 100%;
-   position: relative;
+  height: 200px;
+  width: 100%;
+  position: relative;
 }
 
 .windSpeedContainer {
-   margin-top: 20px;
-   display: flex;
-   justify-content: center;
-   margin-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .windSpeedContainer img {
-   fill: white;
+  fill: white;
 }
 
 .graphic1 {
-   top: 100px;
-   height: 200px;
-   width: 100%;
-   position: absolute;
-   z-index: 5;
+  top: 100px;
+  height: 200px;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
 }
 
 .graphic2 {
-   top: 300px;
-   height: 200px;
-   width: 100%;
-   position: absolute;
+  top: 300px;
+  height: 200px;
+  width: 100%;
+  position: absolute;
 }
 
 .svg {
-   width: 1200px;
+  width: 1200px;
 }
 
 .round {
-   position: absolute;
-   top: 53px;
-   left: 27px;
-   color: white;
-   z-index: 100;
+  position: absolute;
+  top: 53px;
+  left: 27px;
+  color: white;
+  z-index: 100;
 }
-
-
-
