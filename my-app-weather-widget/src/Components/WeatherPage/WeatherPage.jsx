@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './WeatherPage.module.css';
-import store from './../../store/store';
+import store from './../../store';
 import WeatherItem from './WeatherItem';
 
 const WeatherPage = () => {
-  const state = store._weatherPage
+  const state = store
 
   const weatherList = state.map((item) => <WeatherItem state={item} />);
 
