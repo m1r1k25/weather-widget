@@ -1,52 +1,16 @@
 import React from 'react';
 import styles from './WeatherPage.module.css';
+import store from './../../store/store';
+import WeatherItem from './WeatherItem';
 
-const WeatherPage = (props) => {
-  let state = props.getState();
+const WeatherPage = () => {
+  const state = store._weatherPage
 
-  const startCoordinate = 53;
-
-  const elements = state.map((item) => {
-    return (
-      <div div className={styles.blockWeatherContainer}>
-        <div className={styles.dayContainer}>{item.day}</div>
-        <div className={styles.dateContainer}>{item.date}</div>
-        <div className={styles.iconContainer}>
-          <img src={require(`./../../assets/images/${item.cloudImg}`)}></img>
-        </div>
-        <div className={styles.emptyContainer1}>
-          <div
-            style={{ top: `${startCoordinate + item.coorUp}px` }}
-            className={styles.round}
-          >
-            <svg xmlns="https://upload.wikimedia.org/wikipedia/commons/4/4e/Breezeicons-actions-22-draw-circle.svg">
-              <circle cx="5" cy="5" r="5" fill="white" />
-            </svg>
-          </div>
-        </div>
-        <div className={styles.emptyContainer2}>
-          <div
-            style={{ top: `${startCoordinate + item.coorDown}px` }}
-            className={styles.round}
-          >
-            <svg xmlns="https://upload.wikimedia.org/wikipedia/commons/4/4e/Breezeicons-actions-22-draw-circle.svg">
-              <circle cx="5" cy="5" r="5" fill="white" />
-            </svg>
-          </div>
-        </div>
-        <div className={styles.iconContainer}>
-          <img src={require(`./../../assets/images/${item.moonImg}`)}></img>
-        </div>
-        <div className={styles.windSpeedContainer}>
-          <span>↗ {item.wind}</span>
-        </div>
-      </div>
-    );
-  });
+  const weatherList = state.map((item) => <WeatherItem state={item} />);
 
   return (
     <div className={styles.weatherPageContainer}>
-      {elements}
+      {weatherList}
       <div className={styles.graphic1}>
         <svg className={styles.svg}>
           <polyline

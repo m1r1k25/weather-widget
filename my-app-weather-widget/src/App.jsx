@@ -1,10 +1,10 @@
 import './App.css';
 import WeatherPage from './Components/WeatherPage/WeatherPage';
 
-const App = (props) => {
+const App = () => {
   return (
     <div className="app-wrapper">
-      <WeatherPage getState={props.getState} />
+      <WeatherPage />
     </div>
   );
 };

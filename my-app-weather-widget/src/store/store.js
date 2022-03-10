@@ -46,9 +46,6 @@ let store = {
          coorDown: 0,
       },
    ],
-   getState() {
-      return this._weatherPage;
-   },
 }
 
 export default store;
